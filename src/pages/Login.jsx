@@ -1,20 +1,26 @@
 // src/Login.js
 import React, { useState } from 'react';
+// import { useHistory } from 'react-router-dom'; // Import useHistory for navigation
+import { useNavigate } from 'react-router-dom';
 import './Login.css'; // Import the CSS file
 import axios from 'axios'; // Import axios if you're using it
-import aviconnLogo from '../Static/images/Aviconn Logo.png'
+import aviconnLogo from '../Static/images/Aviconn Logo.png';
 
 const Login = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [data, setData] = useState(null);
     const [id, setId] = useState('');
 
     const handleSubmit = (e) => {
+        console.log("indide")
         e.preventDefault();
         // Handle login logic here
         console.log('Email:', email);
         console.log('Password:', password);
+        // Navigate to the success page
+        navigate("/success")
     };
 
     const handleClick = async () => {
@@ -56,7 +62,7 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
             <footer className="footer">
-                <p>Powered by Aviconn Solutions</p>
+                <p>Powered by Aviconn Solutions Pvt Ltd</p>
             </footer>
         </div>
     );

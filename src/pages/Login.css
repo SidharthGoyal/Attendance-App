@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     padding: 20px;
+    box-shadow: 20px 30px;
 }
 
 .logo-container {
@@ -19,15 +20,15 @@ body {
 }
 
 .logo {
-    width: 120px; /* Adjust the width of the logo as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 10rem; /* Adjust the width of the logo as needed */
+    height: 10rem; /* Maintain aspect ratio */
 }
 
 .login-form {
     background-color: white;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 8px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     transition: all 0.3s ease;
@@ -37,7 +38,7 @@ body {
     margin-bottom: 20px;
     text-align: center;
     color: #ff5722; /* Orange color */
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .form-group {
@@ -53,7 +54,7 @@ body {
 
 .form-group input {
     width: 100%;
-    padding: 12px;
+    padding: 2%;
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border 0.3s;
@@ -71,7 +72,7 @@ button {
     background-color: #ff5722; /* Orange color */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
@@ -100,7 +101,5 @@ button:hover {
         width: 90%;
     }
 
-    .logo {
-        width: 20px;
-    }
+
 }
